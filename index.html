@@ -71,8 +71,9 @@
   
 </div>
 <script type="text/javascript">
+(function(){
 
-	  		var canvas = document.getElementById('game');
+var canvas = document.getElementById('game');
 	  		var ctx = canvas.getContext('2d');
 
 	  		canvas.width = 400;
@@ -81,6 +82,9 @@
 	  		ctx.beginPath();
 	  		ctx.arc(100,150,50,0,Math.PI*2,true);
 	  		ctx.fill();
+
+})
+	  		
 
 
 	  	</script>
