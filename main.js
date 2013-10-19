@@ -1,6 +1,7 @@
 
 var gameModule = (function(){
-
+var timeOutvar,
+	count = 0;
 	function start(){
 
 		var canvas = document.getElementById('game'),
@@ -16,7 +17,22 @@ var gameModule = (function(){
 	  		ctx.beginPath();
 	  		ctx.arc(ballx,bally,ballz,0,Math.PI*2,true);
 	  		ctx.fill();
+
+	  		if(count>=10){
+
+
+
+		  	}else{
+
+		  		timeOutvar = setTimeout(start,1000);
+
+		  		count = count+1;
+		  		console.log("Counter: " + count);
+		  	}
+	  	
 	  	}
+
+	  	
 
 	  	return{
 
